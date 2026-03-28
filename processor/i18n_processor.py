@@ -43,10 +43,12 @@ def process(text: str, language: str) -> str:
     elif language == 'de':
         text = de.fix_diacritics_de(text)
         text = base.fix_common_typos(text, de.TYPO_DICT)
-    elif language in ('fr', 'es'):
-        # Language-specific modules are placeholders for v1.1
-        # Apply base typo fix with empty dict (no-op)
-        pass
+    elif language == 'fr':
+        text = fr.fix_diacritics_fr(text)
+        text = base.fix_common_typos(text, fr.TYPO_DICT)
+    elif language == 'es':
+        text = es.fix_diacritics_es(text)
+        text = base.fix_common_typos(text, es.TYPO_DICT)
     elif language == 'en':
         # English passthrough — apply only base rules
         pass

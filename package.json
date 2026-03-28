@@ -25,7 +25,7 @@
   "openclaw": {
     "kind": "plugin",
     "emoji": "🌍",
-    "languages": ["ro", "de"],
+    "languages": ["ro", "de", "fr", "es"],
     "pricing": "€5/month",
     "trial": "7 days free",
     "extensions": [
