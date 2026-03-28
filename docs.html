@@ -235,5 +235,11 @@ pip install -r requirements.txt</code></pre>
       </div>
     </div>
   </footer>
+  <script>
+    const io = new IntersectionObserver((e)=>e.forEach(el=>{if(el.isIntersecting){el.target.classList.add("is-visible");io.unobserve(el.target)}}),{threshold:0.1,rootMargin:"0px 0px -50px 0px"});
+    document.querySelectorAll("[data-animate]").forEach(el=>io.observe(el));
+    const nav=document.querySelector(".nav");
+    window.addEventListener("scroll",()=>{nav.classList.toggle("scrolled",window.pageYOffset>50);},{passive:true});
+  </script>
 </body>
 </html>

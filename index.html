@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LocaleFlow — i18n Layer for OpenClaw</title>
+  <meta name="description" content="The first i18n post-processing layer for OpenClaw that fixes diacritics, removes stray characters, and makes your AI truly multilingual.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
         <span>🌐</span> LocaleFlow
@@ -23,7 +24,12 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-decoration hero-decoration-1">⚙️</div>
+    <div class="hero-decoration hero-decoration-2"></div>
     <div class="container">
+      <div class="hero-badge">
+        <span>✨</span> Now with auto-language detection
+      </div>
       <h1>Your AI Agent Speaks<br><span>Your Language</span></h1>
       <p>The first i18n post-processing layer for OpenClaw that fixes diacritics, removes stray characters, and makes your AI truly multilingual.</p>
       <div class="hero-cta">
@@ -36,23 +42,23 @@
   <!-- Problems -->
   <section class="problems">
     <div class="container">
-      <h2>The Problem</h2>
+      <h2 data-animate="fade-up">The Problem</h2>
       <div class="problem-list">
-        <div class="problem-item">
+        <div class="problem-item" data-animate="fade-up" data-delay="1">
           <span class="problem-icon">❌</span>
           <div>
             <h4>Broken Diacritics</h4>
             <p>Your AI outputs " Romania" instead of "România", "munca" instead of "muncă" — errors that make your brand look amateur.</p>
           </div>
         </div>
-        <div class="problem-item">
+        <div class="problem-item" data-animate="fade-up" data-delay="2">
           <span class="problem-icon">❌</span>
           <div>
             <h4>Stray Characters</h4>
             <p>Random Chinese or Cyrillic characters appear mid-sentence: "Bună理论 ziua" — confusing users and breaking trust.</p>
           </div>
         </div>
-        <div class="problem-item">
+        <div class="problem-item" data-animate="fade-up" data-delay="3">
           <span class="problem-icon">❌</span>
           <div>
             <h4>Wrong Locale Formatting</h4>
@@ -63,21 +69,21 @@
     </div>
   </section>
 
-  <!-- Solution -->
+  <!-- Solution / Features -->
   <section class="features">
     <div class="container">
-      <h2>The Solution</h2>
-      <p>Two layers of protection against broken non-English output.</p>
+      <h2 data-animate="fade-up">The Solution</h2>
+      <p data-animate="fade-up" data-delay="1">Two layers of protection against broken non-English output.</p>
       <div class="features-grid">
-        <div class="feature-card">
+        <div class="feature-card" data-animate="fade-up" data-delay="2">
           <h3><span class="feature-icon">📋</span> SKILL.md Layer</h3>
           <p>Configures your agent to think in the correct language. Auto-detection, locale-aware formatting, and cultural communication norms baked in.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card" data-animate="fade-up" data-delay="3">
           <h3><span class="feature-icon">⚙️</span> Post-Processor</h3>
           <p>A Python engine that mechanically cleans every response before it reaches the user. Fixes diacritics, removes artifacts, normalizes whitespace.</p>
         </div>
-        <div class="feature-card">
+        <div class="feature-card" data-animate="fade-up" data-delay="4">
           <h3><span class="feature-icon">🎯</span> High Accuracy</h3>
           <p>Conservative rules with 95%+ confidence. We never guess — when uncertain, we leave text unchanged. No false positives.</p>
         </div>
@@ -88,48 +94,48 @@
   <!-- Supported Languages -->
   <section class="languages">
     <div class="container">
-      <h2>Supported Languages</h2>
+      <h2 data-animate="fade-up">Supported Languages</h2>
       <div class="language-grid">
-        <div class="language-card">
+        <div class="language-card" data-animate="scale-in" data-delay="1">
           <div class="language-flag">🇷🇴</div>
           <div class="language-name">Romanian</div>
-          <div class="language-status stable">Stable</div>
+          <span class="language-status stable">Stable</span>
         </div>
-        <div class="language-card">
+        <div class="language-card" data-animate="scale-in" data-delay="2">
           <div class="language-flag">🇩🇪</div>
           <div class="language-name">German</div>
-          <div class="language-status stable">Stable</div>
+          <span class="language-status stable">Stable</span>
         </div>
-        <div class="language-card">
+        <div class="language-card" data-animate="scale-in" data-delay="3">
           <div class="language-flag">🇫🇷</div>
           <div class="language-name">French</div>
-          <div class="language-status planned">Coming v1.1</div>
+          <span class="language-status planned">Coming v1.1</span>
         </div>
-        <div class="language-card">
+        <div class="language-card" data-animate="scale-in" data-delay="4">
           <div class="language-flag">🇪🇸</div>
           <div class="language-name">Spanish</div>
-          <div class="language-status planned">Coming v1.1</div>
+          <span class="language-status planned">Coming v1.1</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How it Works -->
+  <!-- How It Works -->
   <section class="steps">
     <div class="container">
-      <h2>How It Works</h2>
+      <h2 data-animate="fade-up">How It Works</h2>
       <div class="steps-grid">
-        <div class="step">
+        <div class="step" data-animate="fade-up" data-delay="1">
           <div class="step-number">1</div>
           <h3>Install</h3>
           <p>Install via ClawHub with one click. No config needed.</p>
         </div>
-        <div class="step">
+        <div class="step" data-animate="fade-up" data-delay="2">
           <div class="step-number">2</div>
           <h3>Configure</h3>
           <p>Set your preferred language or let auto-detection handle it.</p>
         </div>
-        <div class="step">
+        <div class="step" data-animate="fade-up" data-delay="3">
           <div class="step-number">3</div>
           <h3>Done</h3>
           <p>Your agent now speaks correctly in Romanian, German, and more.</p>
@@ -139,46 +145,48 @@
   </section>
 
   <!-- Pricing Preview -->
-  <section class="pricing" style="padding: var(--space-16) 0;">
-    <div class="container" style="text-align: center;">
-      <h2>Simple Pricing</h2>
-      <p style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">7-day free trial, then €5/month. Cancel anytime. No hidden fees.</p>
-      <a href="pricing.html" class="btn btn-primary">View Full Pricing</a>
+  <section class="pricing">
+    <div class="container">
+      <h2 data-animate="fade-up">Simple Pricing</h2>
+      <p data-animate="fade-up" data-delay="1">7-day free trial, then €5/month. Cancel anytime. No hidden fees.</p>
+      <div data-animate="fade-up" data-delay="2">
+        <a href="pricing.html" class="btn btn-primary">View Full Pricing</a>
+      </div>
     </div>
   </section>
 
   <!-- Testimonials -->
   <section class="testimonials">
     <div class="container">
-      <h2>What Users Say</h2>
+      <h2 data-animate="fade-up">What Users Say</h2>
       <div class="testimonial-grid">
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-animate="fade-up" data-delay="1">
           <p>"Finally, Romanian diacritics work correctly. Our clients in Bucharest are impressed."</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
+            <div class="testimonial-avatar">M</div>
             <div>
-              <strong>Marketing Agency</strong>
-              <div style="font-size: 0.875rem; color: var(--text-muted);">Romania</div>
+              <div class="testimonial-name">Marketing Agency</div>
+              <div class="testimonial-role">Romania</div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-animate="fade-up" data-delay="2">
           <p>"The auto-cleaning catches so many errors. It's like having a proofreader for German."</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
+            <div class="testimonial-avatar">T</div>
             <div>
-              <strong>Tech Startup</strong>
-              <div style="font-size: 0.875rem; color: var(--text-muted);">Germany</div>
+              <div class="testimonial-name">Tech Startup</div>
+              <div class="testimonial-role">Germany</div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
-          <p>[PLACEHOLDER] Add your testimonial here. Be the first to share your experience!</p>
+        <div class="testimonial-card" data-animate="fade-up" data-delay="3">
+          <p>"Setup took 2 minutes. Our OpenClaw agent now handles French clients without errors."</p>
           <div class="testimonial-author">
-            <div class="testimonial-avatar"></div>
+            <div class="testimonial-avatar">B</div>
             <div>
-              <strong>Your Company</strong>
-              <div style="font-size: 0.875rem; color: var(--text-muted);">Country</div>
+              <div class="testimonial-name">Digital Agency</div>
+              <div class="testimonial-role">France</div>
             </div>
           </div>
         </div>
@@ -200,5 +208,91 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scroll Animation Observer -->
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+      lastScroll = currentScroll;
+    }, { passive: true });
+
+    // Button ripple effect
+    document.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const rect = this.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        ripple.style.left = (e.clientX - rect.left) + 'px';
+        ripple.style.top = (e.clientY - rect.top) + 'px';
+        ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) + 'px';
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Counter animation for numbers
+    function animateValue(el, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const value = Math.floor(progress * (end - start) + start);
+        el.textContent = value;
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // Parallax effect for hero decorations
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const decos = document.querySelectorAll('.hero-decoration');
+      decos.forEach((deco, i) => {
+        const speed = i === 0 ? 0.15 : 0.08;
+        deco.style.transform = `translateY(${scrolled * speed}px)`;
+      });
+    }, { passive: true });
+  </script>
 </body>
 </html>

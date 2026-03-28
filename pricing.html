@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pricing — LocaleFlow</title>
+  <meta name="description" content="Simple, transparent pricing for LocaleFlow — the i18n post-processor for OpenClaw.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,10 +23,10 @@
   </nav>
 
   <!-- Hero -->
-  <section class="hero" style="padding: var(--space-12) 0;">
+  <section class="hero" style="padding: calc(var(--space-12) + 60px) 0 var(--space-12);">
     <div class="container">
-      <h1>Simple, Transparent Pricing</h1>
-      <p>Start free, upgrade when you're ready. No hidden fees, no surprises.</p>
+      <h1 data-animate="fade-up">Simple, Transparent Pricing</h1>
+      <p data-animate="fade-up" data-delay="1">Start free, upgrade when you're ready. No hidden fees, no surprises.</p>
     </div>
   </section>
 
@@ -34,8 +35,8 @@
     <div class="container">
       <div class="pricing-grid">
         <!-- Free Plan -->
-        <div class="pricing-card">
-          <h3>Free</h3>
+        <div class="pricing-card" data-animate="fade-up" data-delay="1">
+          <h3 style="margin-bottom: var(--space-2);">Free</h3>
           <div class="pricing-price">€0<span>/forever</span></div>
           <p style="color: var(--text-muted); margin-bottom: var(--space-4);">No credit card required</p>
           <ul class="pricing-features">
@@ -46,13 +47,13 @@
             <li>SKILL.md configuration</li>
             <li>Community support</li>
           </ul>
-          <button class="btn btn-secondary" style="width: 100%;">Install Free</button>
+          <a href="#" class="btn btn-secondary" style="width: 100%;">Install Free</a>
         </div>
 
         <!-- Pro Plan -->
-        <div class="pricing-card featured">
+        <div class="pricing-card featured" data-animate="fade-up" data-delay="2">
           <span class="pricing-badge">Most Popular</span>
-          <h3>Pro</h3>
+          <h3 style="margin-bottom: var(--space-2);">Pro</h3>
           <div class="pricing-price">€5<span>/month</span></div>
           <p style="color: var(--text-muted); margin-bottom: var(--space-4);">Billed monthly, cancel anytime</p>
           <ul class="pricing-features">
@@ -65,63 +66,31 @@
             <li>Early access to new languages</li>
             <li>Custom rule requests</li>
           </ul>
-          <button class="btn btn-primary" style="width: 100%;">Start 7-Day Free Trial</button>
+          <a href="#" class="btn btn-primary" style="width: 100%;">Start 7-Day Free Trial</a>
         </div>
       </div>
 
       <!-- Feature Comparison -->
-      <div style="margin-top: var(--space-12);">
-        <h2 style="text-align: center; margin-bottom: var(--space-8);">Feature Comparison</h2>
-        <div class="table-wrapper">
+      <div style="margin-top: var(--space-16);">
+        <h2 data-animate="fade-up" style="text-align: center; margin-bottom: var(--space-8);">Feature Comparison</h2>
+        <div class="table-wrapper" data-animate="fade-up" data-delay="1">
           <table>
             <thead>
               <tr>
                 <th>Feature</th>
-                <th style="text-align: center;">Free Trial</th>
+                <th style="text-align: center;">Free</th>
                 <th style="text-align: center;">Pro</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Supported languages</td>
-                <td style="text-align: center;">Romanian (RO)</td>
-                <td style="text-align: center;">Romanian + German (DE)</td>
-              </tr>
-              <tr>
-                <td>Post-processor</td>
-                <td style="text-align: center;">✓</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>Auto-detection</td>
-                <td style="text-align: center;">✓</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>Locale formatting</td>
-                <td style="text-align: center;">✓</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>SKILL.md</td>
-                <td style="text-align: center;">✓</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>Priority support</td>
-                <td style="text-align: center;">—</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>Early language access</td>
-                <td style="text-align: center;">—</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
-              <tr>
-                <td>Custom rules</td>
-                <td style="text-align: center;">—</td>
-                <td style="text-align: center;">✓</td>
-              </tr>
+              <tr><td>Supported languages</td><td style="text-align: center;">Romanian (RO)</td><td style="text-align: center;">Romanian + German (DE)</td></tr>
+              <tr><td>Post-processor</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Auto-detection</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Locale formatting</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>SKILL.md</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Priority support</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Early language access</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Custom rules</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
             </tbody>
           </table>
         </div>
@@ -129,31 +98,42 @@
 
       <!-- FAQ -->
       <div style="margin-top: var(--space-16);">
-        <h2 style="text-align: center; margin-bottom: var(--space-8);">Billing FAQ</h2>
-        <div class="features-grid">
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">How does billing work?</h3>
-            <p>We bill monthly through Lemon Squeezy. Your first 7 days are free, then €5/month starting day 8.</p>
+        <h2 data-animate="fade-up" style="text-align: center; margin-bottom: var(--space-8);">Billing FAQ</h2>
+        <div class="faq-list">
+          <div class="faq-item" data-animate="fade-up" data-delay="1">
+            <div class="faq-question">
+              How does billing work?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">We bill monthly through Lemon Squeezy. Your first 7 days are free, then €5/month starting day 8.</div>
           </div>
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">Can I cancel anytime?</h3>
-            <p>Yes! Cancel anytime from your Lemon Squeezy dashboard. You'll retain access until the end of your billing period.</p>
+          <div class="faq-item" data-animate="fade-up" data-delay="2">
+            <div class="faq-question">
+              Can I cancel anytime?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">Yes! Cancel anytime from your Lemon Squeezy dashboard. You'll retain access until the end of your billing period.</div>
           </div>
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">What happens after the free trial?</h3>
-            <p>Nothing automatic. We'll remind you before day 7, and you can upgrade if you want to continue. No credit card required to start.</p>
+          <div class="faq-item" data-animate="fade-up" data-delay="3">
+            <div class="faq-question">
+              What happens after the free trial?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">Nothing automatic. We'll remind you before day 7, and you can upgrade if you want to continue. No credit card required to start.</div>
           </div>
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">Do you offer refunds?</h3>
-            <p>We offer a 14-day money-back guarantee. Contact us within 14 days of payment for a full refund.</p>
+          <div class="faq-item" data-animate="fade-up" data-delay="4">
+            <div class="faq-question">
+              Do you offer refunds?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">We offer a 14-day money-back guarantee. Contact us within 14 days of payment for a full refund.</div>
           </div>
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">Is there a yearly plan?</h3>
-            <p>Not yet — yearly plans are on our roadmap. Sign up for the newsletter to be notified when available.</p>
-          </div>
-          <div>
-            <h3 style="margin-bottom: var(--space-2);">What about enterprise pricing?</h3>
-            <p>Contact us at <a href="mailto:bloommediacorporation@gmail.com">bloommediacorporation@gmail.com</a> for custom enterprise solutions with dedicated support, custom integrations, and SLA guarantees.</p>
+          <div class="faq-item" data-animate="fade-up" data-delay="5">
+            <div class="faq-question">
+              What about enterprise pricing?
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">Contact us at <a href="mailto:bloommediacorporation@gmail.com">bloommediacorporation@gmail.com</a> for custom enterprise solutions with dedicated support, custom integrations, and SLA guarantees.</div>
           </div>
         </div>
       </div>
@@ -163,9 +143,11 @@
   <!-- CTA -->
   <section style="padding: var(--space-16) 0; text-align: center;">
     <div class="container">
-      <h2>Ready to get started?</h2>
-      <p style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">Install LocaleFlow free and upgrade to Pro when you need German and priority support.</p>
-      <button class="btn btn-primary">Install from ClawHub</button>
+      <h2 data-animate="fade-up">Ready to get started?</h2>
+      <p data-animate="fade-up" data-delay="1" style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">Install LocaleFlow free and upgrade to Pro when you need German and priority support.</p>
+      <div data-animate="fade-up" data-delay="2">
+        <a href="#" class="btn btn-primary">Install from ClawHub</a>
+      </div>
     </div>
   </section>
 
@@ -183,5 +165,34 @@
       </div>
     </div>
   </footer>
+
+  <!-- FAQ Toggle + Scroll Animations -->
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('open');
+      });
+    });
+
+    // Scroll animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Nav scroll
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.pageYOffset > 50);
+    }, { passive: true });
+  </script>
 </body>
 </html>
