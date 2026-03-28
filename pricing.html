@@ -37,39 +37,51 @@
   <section class="pricing">
     <div class="container">
       <div class="pricing-grid">
-        <!-- Free Plan -->
+        <!-- Free Trial -->
         <div class="pricing-card" data-animate="fade-up" data-delay="1">
-          <h3 style="margin-bottom: var(--space-2);">Free</h3>
-          <div class="pricing-price">€0<span>/forever</span></div>
-          <p style="color: var(--text-muted); margin-bottom: var(--space-4);">No credit card required</p>
+          <div class="pricing-card-header">
+            <h3 style="margin-bottom: var(--space-2);">Free Trial</h3>
+            <div class="pricing-price">€0 <span>/ 7 days</span></div>
+            <p class="pricing-tagline">Full access — no credit card needed</p>
+          </div>
           <ul class="pricing-features">
-            <li>Romanian (RO)</li>
-            <li>Full post-processor features</li>
-            <li>Auto-language detection</li>
-            <li>Locale formatting</li>
+            <li><strong>RO + DE</strong> — full language support</li>
+            <li>Auto-cleaning engine</li>
             <li>SKILL.md configuration</li>
-            <li>Community support</li>
+            <li class="disabled">Future languages (coming v1.1+)</li>
+            <li class="disabled">Priority support</li>
           </ul>
-          <a href="#" class="btn btn-secondary" style="width: 100%;">Install Free</a>
+          <div class="pricing-cta">
+            <div class="waitlist-form-inline">
+              <input type="email" placeholder="your@email.com" class="waitlist-input-sm" required>
+              <button type="submit" class="btn btn-primary btn-sm">Join Waitlist</button>
+            </div>
+            <p class="waitlist-confirmation pricing-confirm" style="display:none">You're on the list!</p>
+          </div>
         </div>
 
         <!-- Pro Plan -->
-        <div class="pricing-card featured" data-animate="fade-up" data-delay="2">
-          <span class="pricing-badge">Most Popular</span>
-          <h3 style="margin-bottom: var(--space-2);">Pro</h3>
-          <div class="pricing-price">€5<span>/month</span></div>
-          <p style="color: var(--text-muted); margin-bottom: var(--space-4);">Billed monthly, cancel anytime</p>
+        <div class="pricing-card pricing-card-pro" data-animate="fade-up" data-delay="2">
+          <div class="pricing-badge">Best Value</div>
+          <div class="pricing-card-header">
+            <h3 style="margin-bottom: var(--space-2);">Pro</h3>
+            <div class="pricing-price">€5 <span>/ month</span></div>
+            <p class="pricing-tagline">Cancel anytime. No hidden fees.</p>
+          </div>
           <ul class="pricing-features">
-            <li>Romanian + German (DE)</li>
-            <li>Full post-processor features</li>
-            <li>Auto-language detection</li>
-            <li>Locale formatting</li>
+            <li><strong>RO + DE</strong> — full language support</li>
+            <li>Auto-cleaning engine</li>
             <li>SKILL.md configuration</li>
-            <li>Priority support</li>
-            <li>Early access to new languages</li>
-            <li>Custom rule requests</li>
+            <li><strong>All future languages</strong> (v1.1+)</li>
+            <li><strong>Priority support</strong></li>
           </ul>
-          <a href="#" class="btn btn-primary" style="width: 100%;">Start 7-Day Free Trial</a>
+          <div class="pricing-cta">
+            <div class="waitlist-form-inline">
+              <input type="email" placeholder="your@email.com" class="waitlist-input-sm" required>
+              <button type="submit" class="btn btn-primary btn-sm">Join Waitlist</button>
+            </div>
+            <p class="waitlist-confirmation pricing-confirm" style="display:none">You're on the list!</p>
+          </div>
         </div>
       </div>
 
@@ -81,19 +93,17 @@
             <thead>
               <tr>
                 <th>Feature</th>
-                <th style="text-align: center;">Free</th>
-                <th style="text-align: center;">Pro</th>
+                <th style="text-align: center;">Free Trial<br><small>€0 / 7 days</small></th>
+                <th style="text-align: center;">Pro<br><small>€5 / month</small></th>
               </tr>
             </thead>
             <tbody>
-              <tr><td>Supported languages</td><td style="text-align: center;">Romanian (RO)</td><td style="text-align: center;">Romanian + German (DE)</td></tr>
-              <tr><td>Post-processor</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>Auto-detection</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>Locale formatting</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>SKILL.md</td><td style="text-align: center;">✓</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>Priority support</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>Early language access</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
-              <tr><td>Custom rules</td><td style="text-align: center;">—</td><td style="text-align: center;">✓</td></tr>
+              <tr><td>Romanian (RO)</td><td style="text-align: center;"><span class="check">✓</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
+              <tr><td>German (DE)</td><td style="text-align: center;"><span class="check">✓</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
+              <tr><td>Auto-cleaning engine</td><td style="text-align: center;"><span class="check">✓</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
+              <tr><td>SKILL.md config layer</td><td style="text-align: center;"><span class="check">✓</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
+              <tr><td>Future languages (v1.1+)</td><td style="text-align: center;"><span class="dash">—</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
+              <tr><td>Priority support</td><td style="text-align: center;"><span class="dash">—</span></td><td style="text-align: center;"><span class="check">✓</span></td></tr>
             </tbody>
           </table>
         </div>
@@ -147,9 +157,13 @@
   <section style="padding: var(--space-16) 0; text-align: center;">
     <div class="container">
       <h2 data-animate="fade-up">Ready to get started?</h2>
-      <p data-animate="fade-up" data-delay="1" style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">Install LocaleFlow free and upgrade to Pro when you need German and priority support.</p>
+      <p data-animate="fade-up" data-delay="1" style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">Join the waitlist — we'll notify you when LocaleFlow launches on ClawHub.</p>
       <div data-animate="fade-up" data-delay="2">
-        <a href="#" class="btn btn-primary">Install from ClawHub</a>
+        <div class="waitlist-form" id="cta-waitlist" style="justify-content: center;">
+          <input type="email" placeholder="your@email.com" class="waitlist-input" required>
+          <button type="submit" class="btn btn-primary">Join Waitlist</button>
+        </div>
+        <p class="waitlist-confirmation" id="cta-waitlist-conf" style="display:none; color: #4ade80; font-size: 1.1rem; font-weight: 600; margin-top: 1rem;">You're on the list! We'll notify you when LocaleFlow launches on ClawHub.</p>
       </div>
     </div>
   </section>
@@ -196,6 +210,24 @@
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.pageYOffset > 50);
     }, { passive: true });
+
+    // Waitlist form handling
+    function setupWaitlistForm(formSelector, confirmSelector) {
+      const forms = document.querySelectorAll(formSelector);
+      const confirms = document.querySelectorAll(confirmSelector);
+      forms.forEach((form, i) => {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = form.querySelector('input[type="email"]');
+          if (input && input.value) {
+            form.style.display = 'none';
+            if (confirms[i]) confirms[i].style.display = 'block';
+          }
+        });
+      });
+    }
+    setupWaitlistForm('.waitlist-form', '.waitlist-confirmation');
+    setupWaitlistForm('.waitlist-form-inline', '.pricing-confirm');
   </script>
 </body>
 </html>

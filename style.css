@@ -1233,3 +1233,126 @@ tr:hover td { background: var(--bg-surface); }
 
 /* ─── UTILITY ─── */
 .text-center { text-align: center; }
+
+/* ─── PRICING UPDATES ─── */
+.pricing-card-pro {
+  border-color: var(--color-primary) !important;
+  background: rgba(255, 59, 59, 0.05) !important;
+}
+
+.pricing-card-pro:hover {
+  transform: scale(1.02) translateY(-6px) !important;
+}
+
+.pricing-card-pro .pricing-badge {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+}
+
+.pricing-card-header {
+  text-align: center;
+}
+
+.pricing-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+.pricing-cta {
+  margin-top: auto;
+}
+
+.pricing-features li.disabled {
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.pricing-features li.disabled::before {
+  content: '—';
+  color: var(--text-muted);
+}
+
+/* ─── COMPARISON TABLE ─── */
+.comparison-table {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.comparison-table .check {
+  color: #4ade80;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.comparison-table .dash {
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+/* ─── WAITLIST FORM ─── */
+.waitlist-form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.waitlist-input {
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  min-width: 240px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.waitlist-input::placeholder {
+  color: var(--text-muted);
+}
+
+.waitlist-input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  background: var(--bg-primary);
+}
+
+.waitlist-confirmation {
+  color: #4ade80;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.waitlist-form-inline {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.waitlist-input-sm {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  min-width: 160px;
+  flex: 1;
+}
+
+.waitlist-input-sm::placeholder {
+  color: var(--text-muted);
+}
+
+.waitlist-input-sm:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.btn-sm {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
