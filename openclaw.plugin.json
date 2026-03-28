@@ -29,5 +29,8 @@
       "label": "Install via ClawHub",
       "source": "bloommediacorporation-lab/openclaw-i18n-skill"
     }
-  }
+  },
+  "extensions": [
+    "./processor/i18n_processor.py"
+  ]
 }
