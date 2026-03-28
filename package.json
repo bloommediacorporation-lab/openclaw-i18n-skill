@@ -25,7 +25,12 @@
   "openclaw": {
     "kind": "plugin",
     "emoji": "🌍",
-    "languages": ["ro", "de", "fr", "es"],
+    "languages": [
+      {"code": "ro", "name": "Romanian", "flag": "🇷🇴", "status": "stable"},
+      {"code": "de", "name": "German", "flag": "🇩🇪", "status": "stable"},
+      {"code": "fr", "name": "French", "flag": "🇫🇷", "status": "stable"},
+      {"code": "es", "name": "Spanish", "flag": "🇪🇸", "status": "stable"}
+    ],
     "pricing": "€5/month",
     "trial": "7 days free",
     "extensions": [
