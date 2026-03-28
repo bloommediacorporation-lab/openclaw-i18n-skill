@@ -28,6 +28,9 @@
     "languages": ["ro", "de"],
     "pricing": "€5/month",
     "trial": "7 days free",
+    "extensions": {
+      "postProcessor": "processor/i18n_processor.py"
+    },
     "install": {
       "id": "clawhub",
       "kind": "clawhub",
