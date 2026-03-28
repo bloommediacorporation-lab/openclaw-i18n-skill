@@ -31,8 +31,8 @@
       {"code": "fr", "name": "French", "flag": "🇫🇷", "status": "stable"},
       {"code": "es", "name": "Spanish", "flag": "🇪🇸", "status": "stable"}
     ],
-    "pricing": "€5/month",
-    "trial": "7 days free",
+    "pricing": "Free",
+    "trial": "No trial needed — permanently free",
     "extensions": [
       "./processor/i18n_processor.py"
     ],
