@@ -28,9 +28,6 @@
     "languages": ["ro", "de"],
     "pricing": "€5/month",
     "trial": "7 days free",
-    "extensions": {
-      "postProcessor": "processor/i18n_processor.py"
-    },
     "install": {
       "id": "clawhub",
       "kind": "clawhub",
@@ -38,6 +35,9 @@
       "source": "bloommediacorporation-lab/openclaw-i18n-skill"
     }
   },
+  "openclaw.extensions": [
+    "./processor/i18n_processor.py"
+  ],
   "dependencies": {},
   "devDependencies": {}
 }
