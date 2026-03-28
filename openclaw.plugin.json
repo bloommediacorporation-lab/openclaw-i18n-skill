@@ -33,5 +33,10 @@
   },
   "extensions": [
     "./processor/i18n_processor.py"
-  ]
+  ],
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
 }
