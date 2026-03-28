@@ -154,6 +154,14 @@ body::before {
   overflow: hidden;
 }
 
+.hero h1 .split-text {
+  overflow: visible;
+}
+
+.hero h1 .split-text .word {
+  overflow: visible;
+}
+
 /* Hero headings animate in immediately on load */
 .hero .split-text .word-inner,
 .split-text.is-visible .word-inner {
@@ -266,7 +274,7 @@ body::before {
   width: 100%;
   height: 100%;
   z-index: 0;
-  opacity: 0.18;
+  opacity: 0.45;
   pointer-events: none;
 }
 
@@ -351,11 +359,13 @@ body::before {
 }
 
 .hero h1 .highlight {
+  display: inline-block;
   background: linear-gradient(135deg, #ff3b3b 0%, #ff6b3c 50%, #ff8c42 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-style: italic;
+  padding-bottom: 0.05em;
 }
 
 .hero > .container > p {
