@@ -660,20 +660,6 @@ section {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: var(--space-12);
-  position: relative;
-  padding-bottom: var(--space-6);
-}
-
-/* Decorative line BELOW h2, not border-bottom (avoids SVG overlap) */
-.steps h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
 }
 
 /* Animated SVG connector line */
@@ -726,10 +712,6 @@ section {
   margin-bottom: var(--space-3);
   font-size: 1.2rem;
   font-weight: 600;
-  min-height: 2.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .step p {
