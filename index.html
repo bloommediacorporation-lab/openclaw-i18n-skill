@@ -12,7 +12,8 @@
   <nav class="nav" id="nav">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <span>🌐</span> LocaleFlow
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--color-primary);"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        LocaleFlow
       </a>
       <ul class="nav-links">
         <li><a href="docs.html">Docs</a></li>
@@ -32,7 +33,8 @@
     
     <div class="container">
       <div class="hero-badge">
-        <span>✨</span> Auto language detection — now in beta
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-primary)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Auto language detection — now in beta
       </div>
       <h1>
         <span class="split-text"><span class="word"><span class="word-inner">Your AI Agent Speaks</span></span></span><br>
@@ -87,15 +89,15 @@
       <p data-animate="fade-up" data-delay="1">Two layers of protection against broken non-English output.</p>
       <div class="features-grid">
         <div class="feature-card" data-animate="fade-up" data-delay="2">
-          <h3><span class="feature-icon">📋</span> SKILL.md Layer</h3>
+          <h3><span class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span> SKILL.md Layer</h3>
           <p>Configures your agent to think in the correct language. Auto-detection, locale-aware formatting, and cultural communication norms baked in.</p>
         </div>
         <div class="feature-card" data-animate="fade-up" data-delay="3">
-          <h3><span class="feature-icon">⚙️</span> Post-Processor</h3>
+          <h3><span class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span> Post-Processor</h3>
           <p>A Python engine that mechanically cleans every response before it reaches the user. Fixes diacritics, removes artifacts, normalizes whitespace.</p>
         </div>
         <div class="feature-card" data-animate="fade-up" data-delay="4">
-          <h3><span class="feature-icon">🎯</span> High Accuracy</h3>
+          <h3><span class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span> High Accuracy</h3>
           <p>Conservative rules with 95%+ confidence. We never guess — when uncertain, we leave text unchanged. No false positives.</p>
         </div>
       </div>
@@ -314,18 +316,18 @@
           node.y += node.vy;
 
           // Glow dot
-          const gradient = ctx.createRadialGradient(node.x, node.y, 0, node.x, node.y, 4);
-          gradient.addColorStop(0, 'rgba(255, 77, 77, 0.6)');
+          const gradient = ctx.createRadialGradient(node.x, node.y, 0, node.x, node.y, 3);
+          gradient.addColorStop(0, 'rgba(255, 77, 77, 0.4)');
           gradient.addColorStop(1, 'rgba(255, 77, 77, 0)');
           ctx.fillStyle = gradient;
           ctx.beginPath();
-          ctx.arc(node.x, node.y, 4, 0, Math.PI * 2);
+          ctx.arc(node.x, node.y, 3, 0, Math.PI * 2);
           ctx.fill();
 
           // Core dot
-          ctx.fillStyle = 'rgba(255, 77, 77, 0.3)';
+          ctx.fillStyle = 'rgba(255, 77, 77, 0.2)';
           ctx.beginPath();
-          ctx.arc(node.x, node.y, 1.5, 0, Math.PI * 2);
+          ctx.arc(node.x, node.y, 1, 0, Math.PI * 2);
           ctx.fill();
         });
 
