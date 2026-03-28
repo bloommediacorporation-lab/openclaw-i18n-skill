@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LocaleFlow — i18n Layer for OpenClaw</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span>🌐</span> LocaleFlow
+      </a>
+      <ul class="nav-links">
+        <li><a href="docs.html">Docs</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="changelog.html">Changelog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Your AI Agent Speaks<br><span>Your Language</span></h1>
+      <p>The first i18n post-processing layer for OpenClaw that fixes diacritics, removes stray characters, and makes your AI truly multilingual.</p>
+      <div class="hero-cta">
+        <a href="pricing.html" class="btn btn-primary">Start Free Trial</a>
+        <a href="docs.html" class="btn btn-secondary">Read Docs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problems -->
+  <section class="problems">
+    <div class="container">
+      <h2>The Problem</h2>
+      <div class="problem-list">
+        <div class="problem-item">
+          <span class="problem-icon">❌</span>
+          <div>
+            <h4>Broken Diacritics</h4>
+            <p>Your AI outputs " Romania" instead of "România", "munca" instead of "muncă" — errors that make your brand look amateur.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">❌</span>
+          <div>
+            <h4>Stray Characters</h4>
+            <p>Random Chinese or Cyrillic characters appear mid-sentence: "Bună理论 ziua" — confusing users and breaking trust.</p>
+          </div>
+        </div>
+        <div class="problem-item">
+          <span class="problem-icon">❌</span>
+          <div>
+            <h4>Wrong Locale Formatting</h4>
+            <p>Dates show as MM/DD/YYYY instead of localized formats. Currency symbols in wrong positions. Phone numbers broken.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section class="features">
+    <div class="container">
+      <h2>The Solution</h2>
+      <p>Two layers of protection against broken non-English output.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3><span class="feature-icon">📋</span> SKILL.md Layer</h3>
+          <p>Configures your agent to think in the correct language. Auto-detection, locale-aware formatting, and cultural communication norms baked in.</p>
+        </div>
+        <div class="feature-card">
+          <h3><span class="feature-icon">⚙️</span> Post-Processor</h3>
+          <p>A Python engine that mechanically cleans every response before it reaches the user. Fixes diacritics, removes artifacts, normalizes whitespace.</p>
+        </div>
+        <div class="feature-card">
+          <h3><span class="feature-icon">🎯</span> High Accuracy</h3>
+          <p>Conservative rules with 95%+ confidence. We never guess — when uncertain, we leave text unchanged. No false positives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Supported Languages -->
+  <section class="languages">
+    <div class="container">
+      <h2>Supported Languages</h2>
+      <div class="language-grid">
+        <div class="language-card">
+          <div class="language-flag">🇷🇴</div>
+          <div class="language-name">Romanian</div>
+          <div class="language-status stable">Stable</div>
+        </div>
+        <div class="language-card">
+          <div class="language-flag">🇩🇪</div>
+          <div class="language-name">German</div>
+          <div class="language-status stable">Stable</div>
+        </div>
+        <div class="language-card">
+          <div class="language-flag">🇫🇷</div>
+          <div class="language-name">French</div>
+          <div class="language-status planned">Coming v1.1</div>
+        </div>
+        <div class="language-card">
+          <div class="language-flag">🇪🇸</div>
+          <div class="language-name">Spanish</div>
+          <div class="language-status planned">Coming v1.1</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works -->
+  <section class="steps">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Install</h3>
+          <p>Install via ClawHub with one click. No config needed.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Configure</h3>
+          <p>Set your preferred language or let auto-detection handle it.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Done</h3>
+          <p>Your agent now speaks correctly in Romanian, German, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Preview -->
+  <section class="pricing" style="padding: var(--space-16) 0;">
+    <div class="container" style="text-align: center;">
+      <h2>Simple Pricing</h2>
+      <p style="max-width: 500px; margin: var(--space-4) auto var(--space-8);">7-day free trial, then €5/month. Cancel anytime. No hidden fees.</p>
+      <a href="pricing.html" class="btn btn-primary">View Full Pricing</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2>What Users Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Finally, Romanian diacritics work correctly. Our clients in Bucharest are impressed."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <strong>Marketing Agency</strong>
+              <div style="font-size: 0.875rem; color: var(--text-muted);">Romania</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"The auto-cleaning catches so many errors. It's like having a proofreader for German."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <strong>Tech Startup</strong>
+              <div style="font-size: 0.875rem; color: var(--text-muted);">Germany</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>[PLACEHOLDER] Add your testimonial here. Be the first to share your experience!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar"></div>
+            <div>
+              <strong>Your Company</strong>
+              <div style="font-size: 0.875rem; color: var(--text-muted);">Country</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <ul class="footer-links">
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
+          <li><a href="https://github.com/bloommediacorporation-lab/openclaw-i18n-skill">GitHub</a></li>
+        </ul>
+        <p class="footer-copyright">Built by Bloom Media © 2026</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
