@@ -31,6 +31,9 @@
     "extensions": [
       "./processor/i18n_processor.py"
     ],
+    "compat": {
+      "pluginApi": ">=1.0.0"
+    },
     "install": {
       "id": "clawhub",
       "kind": "clawhub",
