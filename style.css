@@ -362,12 +362,17 @@ body::before {
   text-align: center;
   max-width: 100%;
   overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
 }
 
 .hero-highlight-wrap {
   display: block;
   text-align: center;
   overflow: visible;
+  line-height: 1.6;
 }
 
 .hero h1 .highlight,
@@ -378,7 +383,7 @@ body::before {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-style: italic;
-  padding-bottom: 0.2em;
+  line-height: 1.6;
 }
 
 .hero > .container > p {
