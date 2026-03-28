@@ -188,24 +188,27 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 64px;
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: var(--space-3);
   font-weight: 700;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   color: var(--text-primary);
   transition: transform var(--duration-fast) var(--ease-spring);
+  line-height: 1;
 }
 
 .nav-logo:hover {
   transform: scale(1.03);
 }
 
-.nav-logo span {
-  display: inline-block;
+.nav-logo svg {
+  margin-right: var(--space-1);
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -287,7 +290,7 @@ body::before {
   text-align: center;
 }
 
-/* Ghost text behind hero */
+/* Ghost text behind hero - very subtle depth effect */
 .hero-ghost {
   position: absolute;
   top: 50%;
@@ -296,7 +299,7 @@ body::before {
   font-family: var(--font-display);
   font-size: clamp(8rem, 25vw, 22rem);
   font-weight: 700;
-  color: rgba(255, 77, 77, 0.015);
+  color: rgba(255, 77, 77, 0.007);
   white-space: nowrap;
   pointer-events: none;
   z-index: 0;
@@ -308,15 +311,21 @@ body::before {
 .hero-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-2);
   background: rgba(255, 77, 77, 0.08);
   border: 1px solid rgba(255, 77, 77, 0.2);
-  padding: 0.5rem 1.25rem;
+  padding: 0.6rem 1.25rem;
   border-radius: 999px;
   font-size: 0.875rem;
   color: var(--color-primary);
   margin-bottom: var(--space-8);
   animation: badgePulse 3s ease-in-out infinite;
+  line-height: 1;
+}
+
+.hero-badge svg {
+  flex-shrink: 0;
 }
 
 @keyframes badgePulse {
@@ -328,8 +337,8 @@ body::before {
   font-family: var(--font-display);
   font-size: clamp(3rem, 8vw, 6.5rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.03em;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   margin-bottom: var(--space-6);
   color: var(--text-primary);
 }
@@ -340,13 +349,14 @@ body::before {
 }
 
 .hero > .container > p {
-  font-size: 1.15rem;
-  max-width: 560px;
+  font-size: 1.1rem;
+  max-width: 520px;
   margin: 0 auto var(--space-10);
   color: var(--text-secondary);
   font-weight: 400;
   letter-spacing: 0.01em;
-  line-height: 1.7;
+  line-height: 1.75;
+  text-wrap: pretty;
 }
 
 .hero-cta {
@@ -378,6 +388,8 @@ body::before {
   position: relative;
   overflow: hidden;
   letter-spacing: 0.02em;
+  text-align: center;
+  line-height: 1.4;
 }
 
 .btn::before {
@@ -648,17 +660,18 @@ section {
 /* ─── HOW IT WORKS ─── */
 .steps {
   padding: var(--space-24) 0;
-  overflow: hidden;
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .steps h2 {
   text-align: center;
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: var(--space-16);
+  margin-bottom: var(--space-12);
 }
 
-/* Animated SVG connector line */
 .steps-container {
   position: relative;
 }
@@ -669,39 +682,12 @@ section {
   gap: var(--space-8);
   position: relative;
   z-index: 1;
-}
-
-/* Animated line between steps */
-.steps-connector {
-  position: absolute;
-  top: 28px;
-  left: calc(16.66% + 28px);
-  right: calc(16.66% + 28px);
-  height: 2px;
-  z-index: 0;
-}
-
-.steps-connector svg {
-  width: 100%;
-  height: 100%;
-}
-
-.steps-connector .line-path {
-  stroke: var(--color-primary);
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  transition: stroke-dashoffset 1.5s var(--ease-out);
-}
-
-.steps-connector.is-visible .line-path {
-  stroke-dashoffset: 0;
+  align-items: start;
 }
 
 .step {
   text-align: center;
-  padding: var(--space-6);
+  padding: var(--space-6) var(--space-4);
   position: relative;
 }
 
@@ -718,20 +704,21 @@ section {
   font-size: 1.4rem;
   border-radius: 50%;
   margin: 0 auto var(--space-6);
-  box-shadow: 0 0 30px var(--color-primary-glow), inset 0 0 20px rgba(255, 77, 77, 0.05);
+  box-shadow: 0 0 20px var(--color-primary-glow);
   transition: all var(--duration-normal) var(--ease-spring);
 }
 
 .step:hover .step-number {
   background: var(--color-primary);
   color: white;
-  transform: scale(1.2) rotate(10deg);
+  transform: scale(1.1);
   box-shadow: var(--shadow-glow-strong);
 }
 
 .step h3 {
   margin-bottom: var(--space-3);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .step p {
