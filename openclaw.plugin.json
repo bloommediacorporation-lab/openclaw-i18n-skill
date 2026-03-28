@@ -1,4 +1,5 @@
 {
+  "id": "openclaw-i18n",
   "name": "openclaw-i18n",
   "version": "1.0.0",
   "description": "Internationalization layer for OpenClaw — auto-detects language, enforces correct diacritics, formats dates/currency per locale, and pipes output through a post-processing cleaner. Supports Romanian and German.",
