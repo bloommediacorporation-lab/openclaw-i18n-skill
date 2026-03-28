@@ -28,9 +28,6 @@
     <!-- Wireframe canvas background -->
     <canvas id="wireframe-canvas"></canvas>
     
-    <!-- Ghost text (depth effect) -->
-    <div class="hero-ghost" aria-hidden="true">i18n</div>
-    
     <div class="container">
       <div class="hero-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--color-primary)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -378,14 +375,6 @@
       connectorObs.observe(connector);
     }
 
-    // ─── GHOST TEXT PARALLAX ───
-    window.addEventListener('scroll', () => {
-      const ghost = document.querySelector('.hero-ghost');
-      if (ghost) {
-        const scrolled = window.pageYOffset;
-        ghost.style.transform = `translate(-50%, calc(-50% + ${scrolled * 0.15}px))`;
-      }
-    }, { passive: true });
   </script>
 </body>
 </html>

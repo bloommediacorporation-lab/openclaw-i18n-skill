@@ -155,14 +155,10 @@ body::before {
   overflow: hidden;
 }
 
-.split-text .word-inner {
-  display: inline-block;
-  transform: translateY(110%);
-  transition: transform 0.8s var(--ease-out);
-}
-
+/* Hero headings animate in immediately on load */
+.hero .split-text .word-inner,
 .split-text.is-visible .word-inner {
-  transform: translateY(0);
+  transform: translateY(0) !important;
 }
 
 /* ─── NAVIGATION ─── */
