@@ -188,7 +188,6 @@ body::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
 }
 
 .nav-logo {
@@ -196,7 +195,7 @@ body::before {
   align-items: center;
   gap: var(--space-3);
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-primary);
   transition: transform var(--duration-fast) var(--ease-spring);
   line-height: 1;
@@ -258,8 +257,7 @@ body::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  padding: 80px 0 var(--space-16);
+  padding: 80px var(--space-6) var(--space-16);
 }
 
 /* Wireframe canvas background */
@@ -270,6 +268,7 @@ body::before {
   height: 100%;
   z-index: 0;
   opacity: 0.18;
+  pointer-events: none;
 }
 
 /* Radial gradient overlay on top of canvas */
@@ -288,6 +287,9 @@ body::before {
   position: relative;
   z-index: 2;
   text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Ghost text behind hero - very subtle depth effect */
@@ -312,20 +314,20 @@ body::before {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-2);
+  gap: 0.5rem;
   background: rgba(255, 77, 77, 0.08);
   border: 1px solid rgba(255, 77, 77, 0.2);
-  padding: 0.6rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   border-radius: 999px;
   font-size: 0.875rem;
   color: var(--color-primary);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-6);
   animation: badgePulse 3s ease-in-out infinite;
-  line-height: 1;
 }
 
 .hero-badge svg {
   flex-shrink: 0;
+  vertical-align: middle;
 }
 
 @keyframes badgePulse {
@@ -335,12 +337,14 @@ body::before {
 
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(3rem, 8vw, 6.5rem);
+  font-size: clamp(2.5rem, 7vw, 5.5rem);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.02em;
   margin-bottom: var(--space-6);
   color: var(--text-primary);
+  text-align: center;
+  overflow: visible;
 }
 
 .hero h1 .highlight {
@@ -386,10 +390,8 @@ body::before {
   cursor: pointer;
   transition: all var(--duration-normal) var(--ease-out);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   letter-spacing: 0.02em;
-  text-align: center;
-  line-height: 1.4;
 }
 
 .btn::before {
@@ -406,16 +408,12 @@ body::before {
 .btn-primary {
   background: var(--color-primary);
   color: white;
-  box-shadow: 0 4px 20px var(--color-primary-glow);
+  box-shadow: 0 4px 20px rgba(255, 77, 77, 0.25);
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 40px var(--color-primary-glow), 0 0 60px var(--color-primary-glow);
-}
-
-.btn-primary:active {
-  transform: translateY(-1px) scale(0.98);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 77, 77, 0.35);
 }
 
 .btn-secondary {
@@ -428,8 +426,7 @@ body::before {
   border-color: var(--color-primary);
   background: rgba(255, 77, 77, 0.08);
   color: var(--color-primary);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
 /* Magnetic button glow */
@@ -517,7 +514,6 @@ section {
   padding: var(--space-8);
   transition: all var(--duration-normal) var(--ease-out);
   position: relative;
-  overflow: hidden;
 }
 
 .feature-card::before {
@@ -597,7 +593,6 @@ section {
   text-align: center;
   transition: all var(--duration-normal) var(--ease-out);
   position: relative;
-  overflow: hidden;
 }
 
 .language-card::after {
@@ -663,6 +658,7 @@ section {
   background: var(--bg-surface);
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
+  overflow: visible;
 }
 
 .steps h2 {
