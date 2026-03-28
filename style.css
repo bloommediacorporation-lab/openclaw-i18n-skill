@@ -659,9 +659,21 @@ section {
   text-align: center;
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: var(--space-8);
-  padding-bottom: 0;
-  border-bottom: none;
+  margin-bottom: var(--space-12);
+  position: relative;
+  padding-bottom: var(--space-6);
+}
+
+/* Decorative line BELOW h2, not border-bottom (avoids SVG overlap) */
+.steps h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
 }
 
 /* Animated SVG connector line */
@@ -677,34 +689,7 @@ section {
   z-index: 1;
 }
 
-/* Animated line between steps */
-.steps-connector {
-  position: absolute;
-  top: 28px;
-  left: calc(16.66% + 28px);
-  right: calc(16.66% + 28px);
-  height: 2px;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.steps-connector svg {
-  width: 100%;
-  height: 100%;
-}
-
-.steps-connector .line-path {
-  stroke: var(--color-primary);
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  transition: stroke-dashoffset 1.5s var(--ease-out);
-}
-
-.steps-connector.is-visible .line-path {
-  stroke-dashoffset: 0;
-}
+/* Connector removed - caused visual conflicts with h2 border */
 
 .step {
   text-align: center;
