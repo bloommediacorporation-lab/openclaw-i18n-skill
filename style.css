@@ -653,6 +653,8 @@ section {
 .steps {
   padding: var(--space-24) 0;
   overflow: hidden;
+  position: relative;
+  background: var(--bg-primary);
 }
 
 .steps h2 {
@@ -660,11 +662,22 @@ section {
   font-family: var(--font-display);
   font-size: clamp(2rem, 5vw, 3.5rem);
   margin-bottom: var(--space-12);
+  border-bottom: 0 !important;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+/* Force any inherited border-bottom to not render */
+.steps h2::before,
+.steps h2::after {
+  display: none !important;
 }
 
 /* Animated SVG connector line */
 .steps-container {
   position: relative;
+  z-index: 1;
 }
 
 .steps-grid {
